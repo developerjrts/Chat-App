@@ -10,7 +10,7 @@ const server = createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-app-client-mu-roan.vercel.app/",
+    origin: "https://nexo-web-nv1e.onrender.com",
   }
 });
 
