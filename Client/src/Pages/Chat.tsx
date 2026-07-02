@@ -16,9 +16,9 @@ const Chat = () => {
 
     const [message, setMessage] = useState("")
 
-    const [searchParams, setSearchParams] = useSearchParams();
-    const name = searchParams.get("name")
-    const roomId = searchParams.get("roomId")
+   const [searchParams] = useSearchParams();
+const name = searchParams.get("name") ?? "";  
+const roomId = searchParams.get("roomId") ?? "";
 
     const sendMessage = (e: any) => {
       e.preventDefault()
