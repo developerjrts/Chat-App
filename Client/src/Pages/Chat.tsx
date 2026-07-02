@@ -16,7 +16,7 @@ const Chat = () => {
 
     const [message, setMessage] = useState("")
 
-    const searchParams = useSearchParams();
+    const [searchParams, setSearchParams] = useSearchParams();
     const name = searchParams.get("name")
     const roomId = searchParams.get("roomId")
 
